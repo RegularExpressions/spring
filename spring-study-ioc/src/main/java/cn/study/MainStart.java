@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class MainStart {
 
 	public static void main(String[] args) {
+		//
 		ApplicationContext context = new AnnotationConfigApplicationContext(MainStart.class);
 		UserServiceImpl bean = context.getBean(UserServiceImpl.class);
 		bean.sayHi();
